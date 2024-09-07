@@ -1,0 +1,41 @@
+{
+  "BadRequest": {
+    "type": "object",
+    "properties": {
+      "message": {
+        "type": "string",
+        "example": "Bad Request"
+      },
+      "data": {
+        "type": "object",
+        "example": {}
+      }
+    }
+  },
+  "InternalError": {
+    "type": "object",
+    "properties": {
+      "message": {
+        "type": "string",
+        "example": "Internal Error"
+      },
+      "data": {
+        "type": "object",
+        "example": {}
+      }
+    }
+  },
+  "NotFound": {
+    "type": "object",
+    "properties": {
+      "message": {
+        "type": "string",
+        "example": "Not Found"
+      },
+      "data": {
+        "type": "object",
+        "example": {}
+      }
+    }
+  }
+}

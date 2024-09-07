@@ -1,0 +1,21 @@
+{
+  "Image": {
+    "type": "object",
+    "properties": {
+      "message": {
+        "type": "string",
+        "example": "Get Image Success"
+      },
+      "data": {
+        "type": "object",
+        "example": {
+          "id": 1,
+          "filename": "filename",
+          "filepath": "filepath",
+          "createdTime": "2024-01-01T00:00:00.000000",
+          "updatedTime": "2024-01-01T00:00:00.000000"
+        }
+      }
+    }
+  }
+}

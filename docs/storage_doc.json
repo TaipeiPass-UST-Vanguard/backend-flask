@@ -1,0 +1,103 @@
+{
+  "StorageGroup": {
+    "type": "object",
+    "properties": {
+      "message": {
+        "type": "string",
+        "example": "Get Storage Group Success"
+      },
+      "data": {
+        "type": "object",
+        "example": {
+          "id": 1,
+          "name": "name",
+          "longitude": 121.252,
+          "latitude": 23.5,
+          "total": 1,
+          "available": 1,
+          "createdTime": "2024-01-01T00:00:00.000000",
+          "updatedTime": "2024-01-01T00:00:00.000000"
+        }
+      }
+    }
+  },
+  "StorageGroupInput": {
+    "type": "object",
+    "example": {
+      "name": "name",
+      "longitude": 121.252,
+      "latitude": 23.5
+    }
+  },
+  "StorageGroupQuery": {
+    "type": "object",
+    "properties": {
+      "message": {
+        "type": "string",
+        "example": "Get Storage Group Success"
+      },
+      "data": {
+        "type": "object",
+        "example": [
+          {
+            "id": 1,
+            "name": "name",
+            "longitude": 121.252,
+            "latitude": 23.5,
+            "total": 1,
+            "available": 1,
+            "createdTime": "2024-01-01T00:00:00.000000",
+            "updatedTime": "2024-01-01T00:00:00.000000"
+          }
+        ]
+      }
+    }
+  },
+  "Storage": {
+    "type": "object",
+    "properties": {
+      "message": {
+        "type": "string",
+        "example": "Get Storage Success"
+      },
+      "data": {
+        "type": "object",
+        "example": {
+          "id": 1,
+          "storageGroupId": 1,
+          "commodityId": 1,
+          "createdTime": "2024-01-01T00:00:00.000000",
+          "updatedTime": "2024-01-01T00:00:00.000000"
+        }
+      }
+    }
+  },
+  "StorageInput": {
+    "type": "object",
+    "example": {
+      "storageGroupId": 1,
+      "commodityId": null
+    }
+  },
+  "StorageQuery": {
+    "type": "object",
+    "properties": {
+      "message": {
+        "type": "string",
+        "example": "Get Storage Success"
+      },
+      "data": {
+        "type": "object",
+        "example": [
+          {
+            "id": 1,
+            "storageGroupId": 1,
+            "commodityId": 1,
+            "createdTime": "2024-01-01T00:00:00.000000",
+            "updatedTime": "2024-01-01T00:00:00.000000"
+          }
+        ]
+      }
+    }
+  }
+}

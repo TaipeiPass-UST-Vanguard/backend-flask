@@ -1,0 +1,77 @@
+{
+  "Record": {
+    "type": "object",
+    "properties": {
+      "message": {
+        "type": "string",
+        "example": "Get Record Success"
+      },
+      "data": {
+        "type": "object",
+        "example": {
+          "id": 1,
+          "userId": "userId",
+          "commodityId": 1,
+          "role": "giver",
+          "reward": 3,
+          "reason": "reason",
+          "createdTime": "2024-01-01T00:00:00.000000",
+          "updatedTime": "2024-01-01T00:00:00.000000"
+        }
+      }
+    }
+  },
+  "UserRecord": {
+    "type": "object",
+    "properties": {
+      "message": {
+        "type": "string",
+        "example": "Get Record Success"
+      },
+      "data": {
+        "type": "object",
+        "example": {
+          "userId": "userId",
+          "recordNum": 1,
+          "meanReward": 3.5,
+          "reportNum": 1,
+          "evaluation": "good"
+        }
+      }
+    }
+  },
+  "RecordInput": {
+    "type": "object",
+    "example": {
+      "userId": "userId",
+      "commodityId": 1,
+      "role": "giver",
+      "reward": 3,
+      "reason": "reason"
+    }
+  },
+  "RecordQuery": {
+    "type": "object",
+    "properties": {
+      "message": {
+        "type": "string",
+        "example": "Get Records Success"
+      },
+      "data": {
+        "type": "object",
+        "example": [
+          {
+            "id": 1,
+            "userId": "userId",
+            "commodityId": 1,
+            "role": "giver",
+            "reward": 3,
+            "reason": "reason",
+            "createdTime": "2024-01-01T00:00:00.000000",
+            "updatedTime": "2024-01-01T00:00:00.000000"
+          }
+        ]
+      }
+    }
+  }
+}

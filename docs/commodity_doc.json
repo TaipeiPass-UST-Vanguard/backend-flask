@@ -1,0 +1,108 @@
+{
+  "Commodity": {
+    "type": "object",
+    "properties": {
+      "message": {
+        "type": "string",
+        "example": "Get Commodity Success"
+      },
+      "data": {
+        "type": "object",
+        "example": {
+          "id": 1,
+          "giverId": "giverId",
+          "receiverId": "receiverId",
+          "storageGroupId": 1,
+          "name": "name",
+          "description": "description",
+          "status": "status",
+          "category": "category",
+          "condition": "condition",
+          "images": [
+            1,
+            2,
+            3
+          ],
+          "expireTime": "2024-01-01T00:00:00.000000",
+          "giveExpireSeconds": 100.0,
+          "giveExpireTime": "2024-01-01T00:00:00.000000",
+          "receiveExpireSeconds": 100.0,
+          "receiveExpireTime": "2024-01-01T00:00:00.000000",
+          "createdTime": "2024-01-01T00:00:00.000000",
+          "updatedTime": "2024-01-01T00:00:00.000000"
+        }
+      }
+    }
+  },
+  "CommodityInput": {
+    "type": "object",
+    "example": {
+      "giverId": "userId",
+      "storageGroupId": 1,
+      "name": "name",
+      "description": "description",
+      "category": "category",
+      "condition": "condition",
+        "images": [
+            1,
+            2,
+            3
+        ]
+    }
+  },
+  "CommodityUpdate": {
+    "type": "object",
+    "example": {
+      "receiverId": "receiverId",
+      "description": "description",
+      "category": "category",
+      "condition": "condition",
+      "status": "status",
+      "images": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  "CommodityQuery": {
+    "type": "object",
+    "properties": {
+      "message": {
+        "type": "string",
+        "example": "Get Commodity Success"
+      },
+      "data": {
+        "type": "object",
+        "example": [
+          {
+            "type": "object",
+            "example": {
+              "id": 1,
+              "giverId": "giverId",
+              "receiverId": "receiverId",
+              "storageId": 1,
+              "name": "name",
+              "description": "description",
+              "status": "status",
+              "category": "category",
+              "condition": "condition",
+              "images": [
+                1,
+                2,
+                3
+              ],
+              "expireTime": "2024-01-01T00:00:00.000000",
+              "giveExpireSeconds": 100.0,
+              "giveExpireTime": "2024-01-01T00:00:00.000000",
+              "receiveExpireSeconds": 100.0,
+              "receiveExpireTime": "2024-01-01T00:00:00.000000",
+              "createdTime": "2024-01-01T00:00:00.000000",
+              "updatedTime": "2024-01-01T00:00:00.000000"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
