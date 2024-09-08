@@ -100,7 +100,7 @@ def get_record(user_id):
     """
     records = db.session.query(Record).filter(Record.userId == user_id).all()
     if not records:
-        return CustomResponse.not_found(message='Record not found')
+        return CustomResponse.not_found(message='Record not found', data={})
 
     record_df = pd.DataFrame([record.to_dict() for record in records])
     recordNum = len(record_df)
