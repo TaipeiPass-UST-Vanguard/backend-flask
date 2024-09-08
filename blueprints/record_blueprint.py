@@ -100,7 +100,7 @@ def get_record(user_id):
     """
     records = db.session.query(Record).filter(Record.userId == user_id).all()
     if not records:
-        return CustomResponse.not_found(message='Record not found', data={
+        return CustomResponse.ok(message='Record not found', data={
         'recordNum': 0,
         'meanReward': 5,
         'reportNum': 0,
