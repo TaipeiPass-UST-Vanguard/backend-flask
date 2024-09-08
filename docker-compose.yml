@@ -8,4 +8,4 @@ services:
       - "5000:5000"
     volumes:
       - ./instance:/app/instance
-      - ./statics:/app/statics
+      - /etc/localtime:/etc/localtime
